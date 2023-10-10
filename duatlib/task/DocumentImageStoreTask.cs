@@ -21,10 +21,6 @@ namespace optimus.duat.lib.task
 
         public DocumentImageStoreTask(FileInfo info, Document document, uint index, DocumentImageServiceClient client)
         {
-            new Document()
-            {
-            }
-
             this.info = info;
             this.document = document;
             this.index = index;
