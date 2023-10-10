@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "duatlib", "duatlib\duatlib.csproj", "{6B944E15-199F-4FA5-9128-3B013EEFBE59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "duatservice", "duatservice\duatservice.csproj", "{85A7DD6B-3172-4EA4-A26B-E1F3AFD16D76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B944E15-199F-4FA5-9128-3B013EEFBE59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B944E15-199F-4FA5-9128-3B013EEFBE59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B944E15-199F-4FA5-9128-3B013EEFBE59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B944E15-199F-4FA5-9128-3B013EEFBE59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85A7DD6B-3172-4EA4-A26B-E1F3AFD16D76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85A7DD6B-3172-4EA4-A26B-E1F3AFD16D76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85A7DD6B-3172-4EA4-A26B-E1F3AFD16D76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85A7DD6B-3172-4EA4-A26B-E1F3AFD16D76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

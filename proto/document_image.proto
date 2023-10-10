@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "br.optimus.osasco.duat.protobuf";
+option go_package = "duat/pb";
+option objc_class_prefix = "HLW";
+
+package duat;
+
+enum StorageType {
+  LOCAL = 0;
+  S3 = 1;
+}
+
+message DocumentImageReply {
+  uint64 id = 1;
+  string document_id = 2;
+  uint32 page = 3;
+  string filename = 4;
+  StorageType storage_type = 5;
+  uint64 created_at = 6;
+  uint64 updated_at = 7;
+  optional uint64 deleted_at = 8;
+}

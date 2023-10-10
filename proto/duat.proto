@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "br.optimus.osasco.duat.protobuf";
+option go_package = "duat/pb";
+option objc_class_prefix = "HLW";
+
+package duat;
+
+import "document.proto";
+import "document_image.proto";
+
+
+service DocumentService {
+  rpc Store(DocumentRequest) returns (DocumentReply);
+}
+
+service DocumentImageService {
+  rpc Store(stream DocumentImageRequest) returns (DocumentImageReply);
+}
+
+message DocumentRequest {
+  uint64 document_type_id = 1;
+  uint64 department_id = 2;
+  string code = 3;
+  string identity = 4;
+  string name = 5;
+  optional string comment = 6;
+  optional string storage = 7;
+  string date_document = 8;
+}
+
+message DocumentImageRequest {
+  string document_id = 1;
+  uint32 page = 2;
+  string image_ext = 3;
+  StorageType storage_type = 4;
+  bytes data = 5;
+}
